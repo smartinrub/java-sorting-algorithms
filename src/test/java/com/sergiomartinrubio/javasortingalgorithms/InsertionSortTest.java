@@ -4,18 +4,19 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class BubbleSortTest {
+class InsertionSortTest {
 
     @Test
-    public void givenArrayWithUnorderedValuesWhenSortThenArrayIsSorted() {
+    public void givenArrayWithUnorderedValuesWhenSortThenSortValues() {
         // GIVEN
         int[] values = {5, 1, 12, -5, 16};
-        BubbleSort bubbleSort = new BubbleSort();
+        InsertionSort insertionSort = new InsertionSort();
 
         // WHEN
-        bubbleSort.sort(values);
+        insertionSort.sort(values);
 
         // THEN
         assertThat(values).containsExactly(-5, 1, 5, 12, 16);
     }
+
 }

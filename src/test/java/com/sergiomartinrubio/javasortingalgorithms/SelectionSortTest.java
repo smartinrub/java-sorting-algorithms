@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class SelectionSortTest {
 
     @Test
-    public void givenArrayWhenSortThenArrayIsSorted() {
+    public void givenArrayWithUnorderedValuesWhenSortThenArrayIsSorted() {
         // GIVEN
         int[] values = {5, 1, 12, -5, 16};
         SelectionSort selectionSort = new SelectionSort();
