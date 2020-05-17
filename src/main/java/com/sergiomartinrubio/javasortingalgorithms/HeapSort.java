@@ -9,7 +9,7 @@ public class HeapSort {
      */
     public void sort(int[] array) {
         buildMaxHeapTree(array);
-        // Once the heap tree is built the array is ordered
+        // once the heap tree is built the array is ordered
         for (int lastNodeIndex = array.length - 1; lastNodeIndex > 0; lastNodeIndex--) {
             int aux = array[0];
             // the greatest value in on the first node of the tree,
@@ -24,7 +24,7 @@ public class HeapSort {
     // O(n)
     void buildMaxHeapTree(int[] array) {
         int treeLengthExcludingLastRow = array.length / 2 - 1;
-        // Go through all the node except for the last row of the tree
+        // go through all the nodes except for the last row of the tree
         for (int nodeIndex = treeLengthExcludingLastRow; nodeIndex >= 0; nodeIndex--) {
             heapify(array, array.length, nodeIndex);
         }
@@ -34,17 +34,17 @@ public class HeapSort {
     // O(log n)
     void heapify(int[] array, int arrayLength, int nodeIndex) {
         int largest = nodeIndex;
-        // In a tree the left node of any node is at: the double of the current position plus one
+        // in a tree the left node of any node is at: the double of the current position plus one
         int left = nodeIndex * 2 + 1;
-        // In a tree the left node of any node is at: the double of the current position plus two
+        // in a tree the left node of any node is at: the double of the current position plus two
         int right = nodeIndex * 2 + 2;
 
-        // The left child is greater than the current node?
+        // the left child is greater than the current node?
         if (left < arrayLength && array[left] > array[largest]) {
             largest = left;
         }
 
-        // The right child is greater than the current node?
+        // the right child is greater than the current node?
         if (right < arrayLength && array[right] > array[largest]) {
             largest = right;
         }
