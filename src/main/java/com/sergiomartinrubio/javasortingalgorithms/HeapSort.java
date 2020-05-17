@@ -21,6 +21,7 @@ public class HeapSort {
         }
     }
 
+    // O(n)
     void buildMaxHeapTree(int[] array) {
         int treeLengthExcludingLastRow = array.length / 2 - 1;
         // Go through all the node except for the last row of the tree
@@ -30,6 +31,7 @@ public class HeapSort {
 
     }
 
+    // O(log n)
     void heapify(int[] array, int arrayLength, int nodeIndex) {
         int largest = nodeIndex;
         // In a tree the left node of any node is at: the double of the current position plus one
