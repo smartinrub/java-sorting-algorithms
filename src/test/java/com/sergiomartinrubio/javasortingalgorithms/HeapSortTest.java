@@ -9,14 +9,14 @@ public class HeapSortTest {
     @Test
     public void givenArrayWithUnorderedValuesWhenSortThenSortValues() {
         // GIVEN
-        int[] values = {5, 1, 12, -5, 16};
+        int[] values = {5, 1, 12, -5, 16, 15};
         HeapSort heapSort = new HeapSort();
 
         // WHEN
         heapSort.sort(values);
 
         // THEN
-        assertThat(values).containsExactly(-5, 1, 5, 12, 16);
+        assertThat(values).containsExactly(-5, 1, 5, 12, 15, 16);
     }
 
 }
