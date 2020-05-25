@@ -1,19 +1,19 @@
-package com.sergiomartinrubio.javasortingalgorithms;
+package com.sergiomartinrubio.javasortingalgorithms.comparisonbased;
 
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class InsertionSortTest {
+public class MergeSortTest {
 
     @Test
     public void givenArrayWithUnorderedValuesWhenSortThenSortValues() {
         // GIVEN
         int[] values = {5, 1, 12, -5, 16};
-        InsertionSort insertionSort = new InsertionSort();
+        MergeSort mergeSort = new MergeSort();
 
         // WHEN
-        insertionSort.sort(values);
+        mergeSort.sort(values);
 
         // THEN
         assertThat(values).containsExactly(-5, 1, 5, 12, 16);

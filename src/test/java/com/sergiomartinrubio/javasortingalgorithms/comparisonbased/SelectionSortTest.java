@@ -1,19 +1,19 @@
-package com.sergiomartinrubio.javasortingalgorithms;
+package com.sergiomartinrubio.javasortingalgorithms.comparisonbased;
 
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class ShellSortTest {
+class SelectionSortTest {
 
     @Test
     public void givenArrayWithUnorderedValuesWhenSortThenArrayIsSorted() {
         // GIVEN
         int[] values = {5, 1, 12, -5, 16};
-        ShellSort shellSort = new ShellSort();
+        SelectionSort selectionSort = new SelectionSort();
 
         // WHEN
-        shellSort.sort(values);
+        selectionSort.sort(values);
 
         // THEN
         assertThat(values).containsExactly(-5, 1, 5, 12, 16);

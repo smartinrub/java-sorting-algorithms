@@ -1,4 +1,4 @@
-package com.sergiomartinrubio.javasortingalgorithms;
+package com.sergiomartinrubio.javasortingalgorithms.comparisonbased;
 
 public class SelectionSort {
 

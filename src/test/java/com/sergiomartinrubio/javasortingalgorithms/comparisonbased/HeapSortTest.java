@@ -1,4 +1,4 @@
-package com.sergiomartinrubio.javasortingalgorithms;
+package com.sergiomartinrubio.javasortingalgorithms.comparisonbased;
 
 import org.junit.jupiter.api.Test;
 
