@@ -10,3 +10,4 @@
 - non-comparison based:
     - Counting Sort
     - Bucket Sort
+    - Radix Sort
