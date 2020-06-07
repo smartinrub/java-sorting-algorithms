@@ -12,7 +12,7 @@ public class BucketSort {
      *
      * @param array to be sorted
      */
-    public void sort(Integer[] array) {
+    public void sort(int[] array) {
 
         // calculate min and maximum values
         int minValue = array[0];
