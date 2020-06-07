@@ -17,7 +17,7 @@ public class BucketSort {
         // calculate min and maximum values
         int minValue = array[0];
         int maxValue = array[0];
-        for (Integer value : array) {
+        for (int value : array) {
             if (value < minValue) {
                 minValue = value;
             }
